@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bloomer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+
+  </head>
+  <body>
+     <div id="logo" class="pull-left">
+        <img src="img/logo.png" alt="" title="" /></img>
+        
+      </div>
+	  
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <i class="fas fa-mug-hot fa-2x tm-page-icon"></i>
+        <h1 class="tm-page-header">WRITING SPACE</h1>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+        <!-- Coffee Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Our Library</h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Work</th>
+                <th>College</th>
+				<th>Location</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left"><a href="AditiNandy.html">The power of the evil: Iago, the sinister villian of Shakespeare's Othello</a></td>
+                <td>Aditi Nandy</td>
+                <td>Student</td>
+                <td>Surya Sen Mahavidyalaya</td>
+				<td>Siliguri</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left"><a href=""></a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+				<td></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left"><a href="Hema.html">Irreverenceand Disdain towards Women: Jayanta Mahapatra's Poetic Vision</a></td>
+                <td>Hema Hansda and Joyeeta Paul Chowdhury</td>
+                <td>Student</td>
+                <td>Surya Sen Mahavidyalaya</td>
+				<td>Siliguri</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left"><a href="snape.html">Good vs Evil: The Case of Severous Snape in J.K Rowling's Harry Potter Novels</a></td>
+                <td>Hema Hansda</td>
+                <td>Student</td>
+                <td>Surya Sen Mahavidyalaya</td>
+				<td>Siliguri</td>
+              </tr>
+             
+            </table>
+          </div>
+        </section>
+
+        
+
+        <!-- Special Items -->
+        <section class="tm-section">
+          <div class="tm-special-items">
+            <figure class="tm-special-item">
+              <img src="img/writing2.jpg" alt="Image" class="tm-special-item-img" />
+            </figure>
+            <figure class="tm-special-item">
+              <img src="img/writing3.jpg" alt="Image" class="tm-special-item-img" />
+            </figure>
+            <figure class="tm-special-item">
+              <img src="img/writing4.jpg" alt="Image" class="tm-special-item-img" />
+            </figure>
+          </div>
+        </section>
+        <hr />
+        <!-- About our cafe -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">About</h2>
+          <p>
+            This page contains the links to the various documents containing valuable research, case studies and concepts built by the fellow members and contributors of Bloomer.
+          </p>
+        </section>
+        <hr />
+		 <br />
+		 <br />
+		 <section class="return">
+		 <div class="return-home"><a href="home.html"><button type="submit">Go Back to Home Page</button></a></div>
+		 </section>
+		 <br />
+		 <br />
+		
+		 
+       
+      
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>
